@@ -1,4 +1,4 @@
 # Chris Mastel's Notes
 
-# This is an H1 Header
-###### This is an H6 Header
+## Summary
+This repository contains all of notes take by [Chris](https://github.com/cmastel) for the [Lighthouse Labs](https://www.lighthouselabs.ca/) Bootcamp.
