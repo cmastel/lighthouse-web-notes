@@ -1,4 +1,4 @@
-### General
+### General - Day 1
 
 `eslint file_name.js` uses ESLint to check the javascript formatting of file_name.js
 
