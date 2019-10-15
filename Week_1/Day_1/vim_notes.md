@@ -1,5 +1,7 @@
 ### Vim Use and Shortcuts
 
+Vim Cheat Sheet: http://www.viemu.com/vi-vim-cheat-sheet.gif 
+
 To open a new file in vim: `vim new_file.txt`
 
 #### In Command Mode
