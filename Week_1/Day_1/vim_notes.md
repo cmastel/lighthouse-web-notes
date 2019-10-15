@@ -2,6 +2,10 @@
 
 Vim Cheat Sheet: http://www.viemu.com/vi-vim-cheat-sheet.gif 
 
+Vim Tutorials:
+* https://www.openvim.com/
+* https://vim-adventures.com/ 
+
 To open a new file in vim: `vim new_file.txt`
 
 #### In Command Mode
