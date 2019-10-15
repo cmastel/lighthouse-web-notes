@@ -2,6 +2,9 @@
 
 `eslint file_name.js` uses ESLint to check the javascript formatting of file_name.js
 
+MarkDown Cheat Sheet:
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
 #### Command Line Arguments 
 ```javascript
 const args = process.argv
