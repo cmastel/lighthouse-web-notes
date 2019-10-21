@@ -1,24 +1,14 @@
-### General - Day 1
+# General Notes
 
+## eslint
 `eslint file_name.js` uses ESLint to check the javascript formatting of file_name.js
 
+## MarkDown
 MarkDown Cheat Sheet:
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
-#### Command Line Arguments 
-```javascript
-const args = process.argv
-```
-`args` is then an array that contains the Command Line Arugments
 
-
-#### Template Literals
-```javascript
-console.log(`This is a string and a ${variable}.`);
-```
-Outputs the (already defined) variable into the string. Can include multiple variables into a single console.
-
-#### Keyboard Shortcuts
+## Keyboard Shortcuts
 `CMD + CTRL + SPACE` access emoji keyboard
 
 `CMD + ~` switch between open windows of the same app (i.e. Chrome)
@@ -30,6 +20,3 @@ Outputs the (already defined) variable into the string. Can include multiple var
 `CMD + W` closes the current tab (Chrome, VS Code)
 
 `CMD + OPT + Left/Right` moves between tabs in an open window (Chrome, VS Code, Terminal)
-
-
-

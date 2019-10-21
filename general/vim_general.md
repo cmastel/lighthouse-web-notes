@@ -1,4 +1,4 @@
-### Vim Use and Shortcuts
+# Vim Use and Shortcuts
 
 Vim Cheat Sheet: http://www.viemu.com/vi-vim-cheat-sheet.gif 
 
@@ -8,7 +8,7 @@ Vim Tutorials:
 
 To open a new file in vim: `vim new_file.txt`
 
-#### In Command Mode
+## In Command Mode
 To move the cursor:
 * H --> Left
 * J --> Down
@@ -30,5 +30,5 @@ Working with files:
 * `:wq` to save and quit
 * `:q!` to quit and ignore changes
 
-#### In Edit Mode
+## In Edit Mode
 Press `esc` to get back into Command mode. 
