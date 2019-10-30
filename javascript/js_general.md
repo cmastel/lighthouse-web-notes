@@ -9,7 +9,8 @@
 * [array.filter()](##array.filter())
 * [Callback Functions](##callback-functions)
 * [Modules](##modules)
-* 
+* [Asynchronous Callbacks](##asynchronous-callbacks)
+*
 
 
 
@@ -111,3 +112,111 @@ const sayHelloTo = require('./myModule');
 
 module.exports = sayHelloTo;
 // This says that from the myModule.js file the sayHelloTo function is exported
+```
+
+## Asynchronous Callbacks
+
+> An asynchronous function takes a callback function as a parameter that is executed *after* the primary function is complete.
+
+This can occur on a specific delay (i.e. setTimeout), or for a function that will take a while to process (i.e. fs.readfile).
+
+### setTimeout
+
+```js
+setTimeout(callback, delay);
+```
+
+```js
+setTimeout(() => {
+  console.log("Delay complete");
+}, 2000);
+```
+Once the delay has been processed, the callback function (i.e. console.log()) will then execute.
+
+
+## Promises
+
+> Represents the eventual result of an asynchronous operation. The `.then` method registers callbacks to receive either a promises eventual value or the reason why the promise cannot be fulfilled.
+
+```js
+nextISSTimes()
+.then((passTimes) => {
+  printPassTimes(passTimes);
+})
+.catch((error) => {
+  console.log("Didn't work.", error.message);
+});
+```
+
+### Promise Function
+
+```js
+new Promise (funtion(resolve[, reject]) {
+  val value = doSomething;
+  if (thingWorked) {
+    resolve(value);
+  } else if (somethingWentWrong) {
+    reject();
+  }
+}).then(function(value) {
+  //success!
+  return nextThing(value);
+}).catch(rejectFunction);
+```
+
+```js
+.catch() = .then(undefined, rejectFunction)
+```
+
+## Classes
+
+> Classses are blueprints (templates) that we use to create instances of objects.
+
+> A class describes what the object is going to be and we can create new objects using the class
+
+```js
+class Pizza {
+
+  constructor(size, crust) {
+    this.size = size;
+    this.crust = crust;
+    this.toppings = ['cheese'];
+  }
+
+  addToppings(topping) {
+    this.toppings.push(topping);
+  }
+
+}
+
+let pizza1 = new Pizza('large', 'thin');
+```
+Class names should be a capitalized noun.
+
+If the parameters are left empty when creating a new Pizza class, the object will still be created but the parameters will be undefined.
+
+### Inheritance
+
+```js
+class Person {
+
+}
+
+class Student extends Person {
+
+}
+
+class Mentor extends Person {
+
+}
+
+let student1 = new Student;
+let mentor1 = new Mentor;
+```
+Both student1 and mentor1 will have the Person constructors and access to Person methods.
+
+Person --> Superclass
+
+Student, Mentor --> Subclasses
+
+

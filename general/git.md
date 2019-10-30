@@ -20,7 +20,7 @@
 
 `get merge <branch-name>` merges <branch-name> with current branch
 
-`git branch -d <branch-name> ` deletes <branch-name> along with commit history
+`git branch -d <branch-name> ` deletes <branch-name> along with commit history  
 
 `git log` provides a log of all recent commits
 

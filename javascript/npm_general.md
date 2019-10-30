@@ -22,3 +22,18 @@ Virtually all Node.js projects have a `package.json` file
 
 `npm publish --access public` publishes a public package to npm
 
+## Common Packages
+
+`npm i mocha --save-dev` --> testing framework
+
+`npm i chai --save-dev` --> assertions for Mocha tests
+
+`npm i express` --> web application framework
+
+`npm i ejs` --> template framework to be used with Express
+
+`npm i body-parser` --> parse incoming request bodies before event handler
+
+`npm i cookie-parser` --> parse cookie header, and populate req.cookies with an object keyed by the cookie names
+
+`npm i nodemon --save-dev` --> keeps server running while changes are made to code
