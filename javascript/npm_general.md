@@ -36,4 +36,9 @@ Virtually all Node.js projects have a `package.json` file
 
 `npm i cookie-parser` --> parse cookie header, and populate req.cookies with an object keyed by the cookie names
 
+`npm i cookie-session` --> module to read/write encrypted cookies
+
 `npm i nodemon --save-dev` --> keeps server running while changes are made to code
+
+`npm i -E bcrypt@2.0.0` --> give the ability to hash user inputs (i.e. passwords), and compare provided input against previously hashed version. Note: specific version helps with vagrant machine
+

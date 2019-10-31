@@ -142,6 +142,7 @@ All .ejs template files are written in HTML and CSS
 
 An HTTP server can tell a client to remember certain keys and values ("cookies") using the Set-Cookie header in an HTTP response. In all subsequent HTTP requests from the client to the server, these keys and values are included in the Cookie header. In essence, the server can ask a client to "keep reminding" the server of the client's identity (or other information) with every subsequent request. 
 
+### cookie-parser
 `npm install cookie-parser`
 
 > Parse Cookie header and populate req.cookies with an object keyed by the cookie names.
@@ -153,3 +154,36 @@ An HTTP server can tell a client to remember certain keys and values ("cookies")
 `res.clearCookie('username');`
 \
 --> clears the cookie of the key/value associated with username
+
+### cookie-session
+
+`req.session.user_id = userID`
+\
+--> sets an encrypted cookie with the value of userID
+
+`const userID = req.session.user_id`
+\
+--> assigns the user_id value of the encrypted cookie to the new variable userID
+
+`req.session = null`
+\
+--> delete cookie
+
+## Storing Passwords Securely
+
+```js
+const bcrypt = require('bcrypt');
+
+app.use(cookieSession({
+  name: 'session',
+  keys: ['key1', 'key2']
+}));
+
+const userPassword = "bad_password";
+const hashedPassword = bcrypt.hashSync(userPassword, 10);
+// the value 10 refers to the amount of "salt" applied
+
+bcrypt.compareSync(userPassword, hashedPassword);
+// checks if the password entered matches what the hash is
+// returns true if it is, false if it isn't
+```
