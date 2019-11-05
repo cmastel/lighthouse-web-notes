@@ -44,7 +44,19 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 \
 **D**elete --> photoApp.com/photos/:id/delete
 
-> Above paths for photoApp can correspond to HTTP Express Routes
+Above paths for photoApp can correspond to HTTP Express Routes
+
+## REST
+
+> Represational State Transfer
+
+REST is a set of conventions and practices in web development that deals with accessing and manipulating resources over HTTP.
+
+A resource can be an abstraction of an object or data. In practice, resources are referenced using a URL.
+
+`/users/1` --> a collection (group of resources) is typically defined, where a single unit (id) is then part of.
+
+
 
 ## URL
 
