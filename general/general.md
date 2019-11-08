@@ -67,3 +67,49 @@ A URL is a specifc type of Uniform Resource Identifier (URI)
 `URI = scheme:[//authority]path[?query][#fragment]`
 
 * scheme --> i.e. http, ftp, mailto
+
+
+## Algorithms
+
+Complexity is the number of elementary operations that a function takes to complete. Typically based on "worst-case" scenario.
+
+examples of elementary operations:
+- let x = a;
+- c = a + b;
+- console.log(aReallyLargeString);
+
+Complexity can be calculated for functions:
+```js
+let result = 0; // 1
+
+for (
+  let i = 0; // 1
+  i < array.length; // n + 1
+  i++ // n
+) {
+  let number = array[i]; // n
+  result += number; // n
+}
+
+console.log(result); // 1
+```
+--> Total complexity = 4n + 4
+
+Static complexity --> No increase in time regardless of the amount of data
+\
+Linear complexity --> Time increases directly in relation to amount of data (i.e. looking at each value of an array)
+\
+Logarithmic --> Time increases less and less the larger a dataset grows, also call **Binary** algorithm (ripping a phone book)
+\
+Quadratic --> Time increases exponentially (n<sup>2</sup>), typically from nested for loops
+
+
+### Big O Notation
+
+> When we evaluate an algorithm using Big O notation, we only care about arbitrarily large input.
+
+2n<sup>2</sup> + 6n + 10 --> O(n<sup>2</sup>)
+
+- Remove constants
+- Remove non-dominant terms
+- 

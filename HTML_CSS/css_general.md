@@ -68,3 +68,12 @@ right: 0px;
 `background-image: url("/images/cool_background.png")`
 --> loads a background image (http://transparenttextures.com) over the item
 \
+
+
+## Design Resources
+
+A site that generates colour schemes is: [coolors](https://coolors.co)
+\
+Flat icons: [flaticons](https://www.flaticon.com)
+\
+For special buttons: [bttn.css](https://bttn.surge.sh)
